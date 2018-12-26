@@ -1,0 +1,3 @@
+function zzz_chunkdisplay:install
+
+function zzz_chunkdisplay:chat_greeting

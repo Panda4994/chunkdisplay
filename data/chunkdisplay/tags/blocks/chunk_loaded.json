@@ -1,0 +1,17 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:cyan_terracotta",
+		"minecraft:gray_concrete",
+		"minecraft:white_concrete",
+		"minecraft:light_gray_concrete",
+		"minecraft:lime_concrete",
+		"minecraft:green_concrete",
+		"minecraft:yellow_concrete",
+		"minecraft:orange_concrete",
+		"minecraft:light_blue_concrete",
+		"minecraft:blue_concrete",
+		"minecraft:magenta_concrete",
+		"minecraft:purple_concrete"
+	]
+}

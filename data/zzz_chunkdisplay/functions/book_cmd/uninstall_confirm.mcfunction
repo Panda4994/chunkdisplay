@@ -1,0 +1,5 @@
+function zzz_chunkdisplay:uninstall
+
+tellraw @s [{"text":"[PCD]","color":"aqua"}," ",{"text":"Removed scoreboards and entities. Delete the datapack now, to avoid it from being reinstalled. Gamerules ","color":"gray"},{"text":"maxCommandChainLength","color":"dark_aqua","clickEvent": {"action": "run_command","value": "/gamerule maxCommandChainLength"},"hoverEvent": {"action": "show_text","value": "→ Get value of maxCommandChainLength ←"}},{"text":", ","color":"gray"},{"text":"doTileDrops","color":"dark_aqua","clickEvent": {"action": "run_command","value": "/gamerule doTileDrops"},"hoverEvent": {"action": "show_text","value": "→ Get value of doTileDrops ←"}},{"text":" and ","color":"gray"},{"text":"sendCommandFeedback","color":"dark_aqua","clickEvent": {"action": "run_command","value": "/gamerule sendCommandFeedback"},"hoverEvent": {"action": "show_text","value": "→ Get value of sendCommandFeedback ←"}},{"text":" might have changed values and may be reset manually.","color":"gray"}]
+
+gamerule sendCommandFeedback true

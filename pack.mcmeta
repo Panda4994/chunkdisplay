@@ -1,0 +1,6 @@
+{
+	"pack" : {
+		"pack_format" : 3,
+		"description" : "Display information about the loading status of chunks."
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:red_concrete",
+		"minecraft:white_concrete",
+		"minecraft:light_gray_concrete",
+		"minecraft:yellow_concrete",
+		"minecraft:orange_concrete",
+		"minecraft:magenta_concrete",
+		"minecraft:purple_concrete"
+	]
+}

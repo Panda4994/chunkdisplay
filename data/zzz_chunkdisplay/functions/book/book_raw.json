@@ -1,0 +1,897 @@
+{
+	"pages": [
+		[
+			"",
+			{
+				"text": "⟐ ",
+				"bold": true,
+				"color": "dark_blue"
+			},
+			{
+				"text": "❬",
+				"color": "dark_gray"
+			},
+			{
+				"text": "Create",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/display_create"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Place a chunk display at your current location ←"
+				}
+			},
+			{
+				"text": "❭",
+				"color": "dark_gray"
+			},
+			" ",
+			{
+				"text": "❬",
+				"color": "dark_gray"
+			},
+			{
+				"text": "Remove",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/display_remove"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Remove the closest display ←"
+				}
+			},
+			{
+				"text": "❭",
+				"color": "dark_gray"
+			},
+			{
+				"text": "\n\n",
+				"color": "reset"
+			},
+			{
+				"text": "⟐ ",
+				"bold": true,
+				"color": "dark_blue"
+			},
+			{
+				"text": "Refresh",
+				"color": "dark_blue",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Refresh the display every n seconds"
+				}
+			},
+			" ",
+			{
+				"text": "⟳",
+				"color": "dark_aqua",
+				"bold": true,
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_update"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Refresh display and book ←"
+				}
+			},
+			" ",
+			{
+				"text": "▎▎",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_pause"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Pause automatic refresh ←"
+				}
+			},
+			" ",
+			{
+				"text": "▶",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_play"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Continue automatic refresh ←"
+				}
+			},
+			" ",
+			{
+				"text": "❬",
+				"color": "dark_gray"
+			},
+			{
+				"text": "1s",
+				"color": "dark_aqua",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_set_1"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Set refresh delay to 1 second ←"
+				}
+			},
+			{
+				"text": "❭",
+				"color": "dark_gray"
+			},
+			{
+				"text": "\n  ",
+				"color": "reset"
+			},
+			{
+				"text": "⁻⁻⁻",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_dec_5"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Decrease refresh delay by 5 seconds ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁻⁻",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_dec_0_5"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Decrease refresh delay by 0.5 seconds ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁻",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_dec_0_05"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Decrease refresh delay by 0.05 seconds ←"
+				}
+			},
+			" ",
+			{
+				"text": "[",
+				"color": "dark_gray"
+			},
+			{
+				"score": {
+					"name": "@e[tag=pcd_center,sort=nearest,limit=1]",
+					"objective": "pcd_delay_X_00"
+				},
+				"color": "gold",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Current refresh delay in seconds"
+				}
+			},
+			{
+				"text": ".",
+				"color": "gold",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Current refresh delay in seconds"
+				}
+			},
+			{
+				"score": {
+					"name": "@e[tag=pcd_center,sort=nearest,limit=1]",
+					"objective": "pcd_delay_0_X0"
+				},
+				"color": "gold",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Current refresh delay in seconds"
+				}
+			},
+			{
+				"score": {
+					"name": "@e[tag=pcd_center,sort=nearest,limit=1]",
+					"objective": "pcd_delay_0_0X"
+				},
+				"color": "gold",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Current refresh delay in seconds"
+				}
+			},
+			{
+				"text": "]",
+				"color": "dark_gray"
+			},
+			" ",
+			{
+				"text": "⁺",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_inc_0_05"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Increase refresh delay by 0.05 seconds ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁺⁺",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_inc_0_5"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Increase refresh delay by 0.5 seconds ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁺⁺⁺",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/refresh_inc_5"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Increase refresh delay by 5 seconds ←"
+				}
+			},
+			{
+				"text": "\n\n",
+				"color": "reset"
+			},
+			{
+				"text": "⟐ ",
+				"bold": true,
+				"color": "dark_blue"
+			},
+			{
+				"text": "Radius",
+				"color": "dark_blue",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Apothem of the monitored area (half the side length of the square)"
+				}
+			},
+			" ",
+			{
+				"text": "❬",
+				"color": "dark_gray"
+			},
+			{
+				"text": "8",
+				"color": "dark_aqua",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_set_8"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Set the apothem (half the side length of the square) to 8 ←"
+				}
+			},
+			{
+				"text": "❭",
+				"color": "dark_gray"
+			},
+			" ",
+			{
+				"text": "❬",
+				"color": "dark_gray"
+			},
+			{
+				"text": "16",
+				"color": "dark_aqua",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_set_16"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Set the apothem (half the side length of the square) to 16 ←"
+				}
+			},
+			{
+				"text": "❭",
+				"color": "dark_gray"
+			},
+			" ",
+			{
+				"text": "❬",
+				"color": "dark_gray"
+			},
+			{
+				"text": "32",
+				"color": "dark_aqua",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_set_32"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Set the apothem (half the side length of the square) to 32 ←"
+				}
+			},
+			{
+				"text": "❭",
+				"color": "dark_gray"
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "ˣ",
+				"bold": true,
+				"color": "blue"
+			},
+			" ",
+			{
+				"text": "⁻⁻⁻",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_x_dec_16"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Decrease X-radius by 16 ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁻⁻",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_x_dec_8"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Decrease X-radius by 8 ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁻",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_x_dec_1"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Decrease X-radius by 1 ←"
+				}
+			},
+			" ",
+			{
+				"text": "[",
+				"color": "dark_gray"
+			},
+			{
+				"score": {
+					"name": "@e[tag=pcd_center,sort=nearest,limit=1]",
+					"objective": "pcd_radius_x"
+				},
+				"color": "gold",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Half the side length in X-direction"
+				}
+			},
+			{
+				"text": "]",
+				"color": "dark_gray"
+			},
+			" ",
+			{
+				"text": "⁺",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_x_inc_1"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Increase X-radius by 1 ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁺⁺",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_x_inc_8"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Increase X-radius by 8 ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁺⁺⁺",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_x_inc_16"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Increase X-radius by 16 ←"
+				}
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "ᶻ",
+				"bold": true,
+				"color": "blue"
+			},
+			" ",
+			{
+				"text": "⁻⁻⁻",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_z_dec_16"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Decrease Z-radius by 16 ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁻⁻",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_z_dec_8"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Decrease Z-radius by 8 ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁻",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_z_dec_1"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Decrease Z-radius by 1 ←"
+				}
+			},
+			" ",
+			{
+				"text": "[",
+				"color": "dark_gray"
+			},
+			{
+				"score": {
+					"name": "@e[tag=pcd_center,sort=nearest,limit=1]",
+					"objective": "pcd_radius_z"
+				},
+				"color": "gold",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Half the side length in Z-direction"
+				}
+			},
+			{
+				"text": "]",
+				"color": "dark_gray"
+			},
+			" ",
+			{
+				"text": "⁺",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_z_inc_1"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Increase Z-radius by 1 ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁺⁺",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_z_inc_8"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Increase Z-radius by 8 ←"
+				}
+			},
+			" ",
+			{
+				"text": "⁺⁺⁺",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/radius_z_inc_16"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Increase Z-radius by 16 ←"
+				}
+			},
+			{
+				"text": "\n\n",
+				"color": "reset"
+			},
+			{
+				"text": "✔",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_lazy_on"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Enable showing of lazy chunks ←"
+				}
+			},
+			" ",
+			{
+				"text": "✘",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_lazy_off"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Disable showing of lazy chunks ←"
+				}
+			},
+			" ",
+			{
+				"text": "Show Lazy Chunks",
+				"color": "blue",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Show lazy chunks as blue and entity processing chunks as green"
+				}
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "✔",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_force_on"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Enable showing of forceloaded chunks ←"
+				}
+			},
+			" ",
+			{
+				"text": "✘",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_force_off"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Disable showing of forceloaded chunks ←"
+				}
+			},
+			" ",
+			{
+				"text": "Show Forceloaded",
+				"color": "blue",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Show forceloaded chunks in a different color"
+				}
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "✔ ✘ Show Forceloaded",
+				"color": "gray",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "/forceload query is not accessible"
+				}
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "✔",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_player_on"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Enable showing of players ←"
+				}
+			},
+			" ",
+			{
+				"text": "✘",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_player_off"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Disable showing of players ←"
+				}
+			},
+			" ",
+			{
+				"text": "Show Players",
+				"color": "blue",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Show players as playerheads on the display"
+				}
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "✔",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_entity_on"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Enable showing of entities ←"
+				}
+			},
+			" ",
+			{
+				"text": "✘",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_entity_off"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Disable showing of entities ←"
+				}
+			},
+			" ",
+			{
+				"text": "Show Entities",
+				"color": "blue",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Show entities as sea pickles on the display"
+				}
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "✔",
+				"color": "green",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_follow_on"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Follow your position ←"
+				}
+			},
+			" ",
+			{
+				"text": "✘",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/flag_follow_off"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Stop following any player ←"
+				}
+			},
+			" ",
+			{
+				"text": "Follow me!",
+				"color": "blue",
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "Keep setting the center of the monitored area to your position"
+				}
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			}
+		],
+		[
+			"",
+			{
+				"text": "Chunkdisplay",
+				"bold": true,
+				"color": "dark_aqua"
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "A tool to show which chunks are loaded.",
+				"color": "gray"
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "Video explanation",
+				"underlined": true,
+				"color": "blue",
+				"clickEvent": {
+					"action": "open_url",
+					"value": "https://www.youtube.com/watch?v=yw-BxLLd2PM"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ https://www.youtube.com/watch?v=yw-BxLLd2PM ←"
+				}
+			},
+			{
+				"text": "\n\n",
+				"color": "reset"
+			},
+			{
+				"text": "By ",
+				"color": "gray"
+			},
+			{
+				"text": "Panda4994",
+				"underlined": true,
+				"color": "dark_blue",
+				"clickEvent": {
+					"action": "open_url",
+					"value": "http://www.youtube.com/Panda4994"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ http://www.youtube.com/Panda4994 ←"
+				}
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "Special thanks to",
+				"color": "gray"
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "Meri the LapisDemon",
+				"underlined": true,
+				"color": "dark_blue",
+				"clickEvent": {
+					"action": "open_url",
+					"value": "http://www.youtube.com/LapisDemon"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ http://www.youtube.com/LapisDemon ←"
+				}
+			},
+			{
+				"text": "\n\n\n",
+				"color": "reset"
+			},
+			{
+				"text": "Tested in:",
+				"color": "gray"
+			},
+			{
+				"text": "\n",
+				"color": "reset"
+			},
+			{
+				"text": "1.13.2",
+				"color": "dark_green"
+			},
+			", ",
+			{
+				"text": "18w50a",
+				"color": "dark_green"
+			},
+			{
+				"text": "\n\n",
+				"color": "reset"
+			},
+			{
+				"text": "Version 1 | ",
+				"color": "gray"
+			},
+			{
+				"text": "❬",
+				"color": "dark_gray"
+			},
+			{
+				"text": "Uninstall",
+				"color": "red",
+				"clickEvent": {
+					"action": "run_command",
+					"value": "/function zzz_chunkdisplay:book_cmd/uninstall"
+				},
+				"hoverEvent": {
+					"action": "show_text",
+					"value": "→ Remove scoreboards and entities ←"
+				}
+			},
+			{
+				"text": "❭",
+				"color": "dark_gray"
+			}
+		]
+	],
+	"title": "Chunkdisplay Control",
+	"author": "Panda4994",
+	"display": {
+		"Lore": [
+			"Place, remove and modify visualisations of the loaded chunks"
+		]
+	}
+}
