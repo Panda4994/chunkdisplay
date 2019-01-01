@@ -19,6 +19,6 @@ execute at @s positioned ~ ~1 ~ as @p[tag=pcd_player_in_chunk] run function zzz_
 execute at @s positioned ~ ~1 ~ as @p[tag=pcd_player_in_chunk] run function zzz_chunkdisplay:loop_detect_chunk/misc_get_head
 
 # Cleanup
-tag @e[tag=pcd_in_chunk,tag=!pcd_chunkpos] remove pcd_in_chunk
+tag @a[tag=pcd_in_chunk,tag=!pcd_chunkpos] remove pcd_in_chunk
 tag @a[tag=pcd_truely_in_chunk] remove pcd_truely_in_chunk
 tag @a[tag=pcd_player_in_chunk] remove pcd_player_in_chunk
