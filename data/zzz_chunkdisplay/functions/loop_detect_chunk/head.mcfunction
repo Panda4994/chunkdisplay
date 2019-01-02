@@ -34,7 +34,11 @@ execute as @e[tag=pcd_chunkpos] store result entity @s Pos[2] double 1 run score
 scoreboard players set X pcd_tmp 0
 scoreboard players set Z pcd_tmp 0
 
+# Gametime
+execute store result score GAMETIME pcd_tmp run time query gametime
+
 # Copy flags
+execute as @s[tag=pcd_flag_lazy] run tag @e[tag=pcd_displaypos] add pcd_flag_lazy
 execute as @s[tag=pcd_flag_force] run tag @e[tag=pcd_displaypos] add pcd_flag_force
 execute as @s[tag=pcd_flag_entity] run tag @e[tag=pcd_displaypos] add pcd_flag_entity
 execute as @s[tag=pcd_flag_global] run tag @e[tag=pcd_displaypos] add pcd_flag_global
