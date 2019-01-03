@@ -1,3 +1,10 @@
+#/
+# Place player head with rotation of the player
+#
+# @param as		Player to get the head of
+# @param at		Position of the skull
+#/
+
 # Get player rotation
 execute store result score ROTATION pcd_tmp run data get entity @s Rotation[0] 4
 

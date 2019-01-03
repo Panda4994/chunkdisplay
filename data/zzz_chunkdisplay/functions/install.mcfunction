@@ -1,7 +1,7 @@
 # Gamerules
 gamerule maxCommandChainLength 10000000
 gamerule doTileDrops false
-gamerule sendCommandFeedback false
+#gamerule sendCommandFeedback false
 
 
 # Scoreboard setup
@@ -35,7 +35,9 @@ scoreboard objectives add pcd_delay_0_0X dummy
 
 scoreboard objectives add pcd_gametime dummy
 scoreboard objectives add pcd_updates dummy
+scoreboard objectives add pcd_dimension dummy
 
+scoreboard objectives add pcd_needed dummy
 
 # Init
 scoreboard players set INT_MIN pcd_const -2147483648
