@@ -1,3 +1,3 @@
-function zzz_chunkdisplay:cmd/display_remove_blocks
+function zzz_chunkdisplay:display/remove_blocks
 
 kill @s

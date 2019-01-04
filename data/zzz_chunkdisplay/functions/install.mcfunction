@@ -34,8 +34,14 @@ scoreboard objectives add pcd_delay_X_00 dummy
 scoreboard objectives add pcd_delay_0_X0 dummy
 scoreboard objectives add pcd_delay_0_0X dummy
 
+scoreboard objectives add pcd_gametime dummy
+scoreboard objectives add pcd_updates dummy
+scoreboard objectives add pcd_dimension dummy
+
+scoreboard objectives add pcd_needed dummy
 
 # Init
+scoreboard players set INT_MIN pcd_const -2147483648
 scoreboard players set 0 pcd_const 0
 scoreboard players set 1 pcd_const 1
 scoreboard players set 2 pcd_const 2
