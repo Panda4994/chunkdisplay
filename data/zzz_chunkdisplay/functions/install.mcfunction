@@ -58,11 +58,11 @@ scoreboard players set 1440 pcd_const 1440
 scoreboard players set RADIUS_X pcd_defaults 8
 scoreboard players set RADIUS_Z pcd_defaults 8
 
+scoreboard players set FLAG_LAZY pcd_defaults 0
 scoreboard players set FLAG_FORCE pcd_defaults 0
 scoreboard players set FLAG_ENTITY pcd_defaults 0
 scoreboard players set FLAG_GLOBAL pcd_defaults 0
 scoreboard players set FLAG_PLAYER pcd_defaults 0
-scoreboard players set FLAG_LAZY pcd_defaults 1
 scoreboard players set FLAG_FOLLOW pcd_defaults 0
 
 scoreboard players set DELAY pcd_defaults 20
