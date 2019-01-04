@@ -6,7 +6,7 @@
 #/
 
 
-execute at @s run function zzz_chunkdisplay:cmd/display_remove_blocks
+execute at @s run function zzz_chunkdisplay:display/remove_blocks
 
 
 execute if score RADIUS_X pcd_tmp <= 0 pcd_const run scoreboard players set RADIUS_X pcd_tmp 1
