@@ -12,8 +12,8 @@ execute store result score @s pcd_center_z run data get entity @s Pos[2] 0.0625
 scoreboard players operation @s pcd_radius_x = RADIUS_X pcd_defaults
 scoreboard players operation @s pcd_radius_z = RADIUS_Z pcd_defaults
 
-function zzz_chunkdisplay:misc/size_x_update
-function zzz_chunkdisplay:misc/size_z_update
+function zzz_chunkdisplay:display/size_x_update
+function zzz_chunkdisplay:display/size_z_update
 
 scoreboard players operation TICKS pcd_tmp = DELAY pcd_defaults
 function zzz_chunkdisplay:cmd/refresh_set

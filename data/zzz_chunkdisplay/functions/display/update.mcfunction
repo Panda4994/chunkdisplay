@@ -10,7 +10,7 @@
 #/
 
 # Follow player
-execute if entity @s[tag=pcd_flag_follow] run function zzz_chunkdisplay:follow_player
+execute if entity @s[tag=pcd_flag_follow] run function zzz_chunkdisplay:display/follow_player
 
 
 # Copy values

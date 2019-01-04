@@ -19,7 +19,7 @@ kill @e[tag=pcd_tmp]
 
 # Query Entity
 summon minecraft:area_effect_cloud ~ 0 ~ {Tags:[pcd_all,pcd_tmp,pcd_chunkpos]}
-# TODO
+# Teleport to right dimension
 execute if score @s pcd_dimension matches -1 as @e[tag=pcd_chunkpos] in minecraft:the_nether run tp 29999976.0 0 29999976.0
 execute if score @s pcd_dimension matches 0 as @e[tag=pcd_chunkpos] in minecraft:overworld run tp 29999976.0 0 29999976.0
 execute if score @s pcd_dimension matches 1 as @e[tag=pcd_chunkpos] in minecraft:the_end run tp 29999976.0 0 29999976.0

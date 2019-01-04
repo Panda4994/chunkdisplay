@@ -1,1 +1,1 @@
-function zzz_chunkdisplay:give_book
+function zzz_chunkdisplay:book/give

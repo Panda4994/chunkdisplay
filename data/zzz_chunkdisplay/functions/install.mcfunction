@@ -1,7 +1,7 @@
 # Gamerules
 gamerule maxCommandChainLength 10000000
 gamerule doTileDrops false
-#gamerule sendCommandFeedback false
+gamerule sendCommandFeedback false
 
 
 # Scoreboard setup

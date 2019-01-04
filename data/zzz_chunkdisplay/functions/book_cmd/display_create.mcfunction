@@ -1,3 +1,3 @@
-function zzz_chunkdisplay:make_display
+function zzz_chunkdisplay:display/create
 
-function zzz_chunkdisplay:replace_book
+function zzz_chunkdisplay:book/replace

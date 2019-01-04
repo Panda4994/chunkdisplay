@@ -28,4 +28,10 @@ scoreboard objectives remove pcd_delay_X_00
 scoreboard objectives remove pcd_delay_0_X0
 scoreboard objectives remove pcd_delay_0_0X
 
+scoreboard objectives remove pcd_gametime
+scoreboard objectives remove pcd_updates
+scoreboard objectives remove pcd_dimension
+
+scoreboard objectives remove pcd_needed
+
 # Gamerules are not reset.
