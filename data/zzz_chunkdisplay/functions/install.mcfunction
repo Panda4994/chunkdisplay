@@ -62,7 +62,7 @@ scoreboard players set FLAG_FOLLOW pcd_defaults 0
 scoreboard players set DELAY pcd_defaults 20
 
 
-scoreboard players set VERSION pcd_defaults 101
+scoreboard players set VERSION pcd_defaults 102
 
 
 scoreboard players set ALLOW_FORCELOAD pcd_defaults 0
